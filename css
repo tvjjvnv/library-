@@ -516,3 +516,9 @@ body {
   text-align: center;
 }
 /* --- END: Site Footer Section --- */
+/* Media queries don't work as inline HTML styles! */
+@media (max-width: 480px) {
+  .hero-image {
+    width: 100%;
+  }
+}
