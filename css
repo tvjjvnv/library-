@@ -516,9 +516,19 @@ body {
   text-align: center;
 }
 /* --- END: Site Footer Section --- */
-/* Media queries don't work as inline HTML styles! */
-@media (max-width: 480px) {
-  .hero-image {
+/* Styles inside this block ONLY apply to screens smaller than 768px */
+@media (max-width: 768px) {
+  
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Force side-by-side flexbox items to stack vertically on phones */
+  .container, .row, .flex-group {
+    flex-direction: column;
     width: 100%;
   }
+
 }
